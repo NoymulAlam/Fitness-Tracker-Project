@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-box {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    .signup-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .signup-box input[type="text"],
+    .signup-box input[type="email"],
+    .signup-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .signup-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .signup-box input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: -8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-box">
+    <h2>Sign Up</h2>
+    <form id="signupForm" onsubmit="return validateForm()">
+      <label>Username</label>
+      <input type="text" id="username" required>
+
+      <label>Email</label>
+      <input type="email" id="email" required>
+
+      <label>Password</label>
+      <input type="password" id="password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" id="confirmPassword" required>
+
+      <div class="error" id="errorMsg"></div>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
