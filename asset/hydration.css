@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2fbff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  text-align: center;
+  color: #0077b6;
+}
+
+/* Sections */
+.section {
+  margin: 25px 0;
+  padding: 15px;
+}
+
+/* Reminder Box */
+.reminder {
+  background: #ffefc1;
+  color: #856404;
+  padding: 10px;
+  border: 1px solid #ffeeba;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 28px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Progress Bar */
+.progress-container {
+  background: #d0f0fd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 30px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #00b4d8;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Buttons & Forms */
+button {
+  background: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0077b6;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Quick Log Buttons */
+.glass-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.glass-buttons form {
+  flex: 1;
+}
+
+/* Entry List */
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .glass-buttons {
+    flex-direction: column;
+  }
+
+  .glass-buttons form {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

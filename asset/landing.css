@@ -1,0 +1,81 @@
+* { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; background: #f8f9fa; }
+
+nav {
+  background: #343a40;
+  color: white;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1571019613914-85f342c85b0e') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cta {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background: #218838;
+}
+
+.features, .testimonials {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.testimonial {
+  background: #f1f4f7;
+  border-left: 5px solid #28a745;
+  margin: 20px 0;
+  padding: 15px;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

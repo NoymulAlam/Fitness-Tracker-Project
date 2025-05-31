@@ -1,0 +1,160 @@
+/* General Page Styles */
+body { 
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Navigation Buttons */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.water-btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.body-btn {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #222;
+}
+
+.nutrition-btn {
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+}
+
+.nav-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Workout Logging Top Button */
+.workout-logging-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 210, 0, 0.6);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: max-content;
+  outline: none;
+}
+
+.workout-logging-btn:hover,
+.workout-logging-btn:focus {
+  background: linear-gradient(45deg, #ffd200, #f7971e);
+  box-shadow: 0 6px 15px rgba(255, 210, 0, 0.9);
+  transform: scale(1.05);
+}
+
+/* Workout Timer & Logging */
+.timer {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.start-btn {
+  background: #007bff;
+  color: white;
+}
+
+.stop-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.save-session-btn {
+  background: #17a2b8;
+  color: white;
+}
+
+/* Forms and Inputs */
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Log Table */
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.log-table th,
+.log-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.log-table th {
+  background-color: #f8f9fa;
+}
+
+/* Messages */
+.msg {
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+}
